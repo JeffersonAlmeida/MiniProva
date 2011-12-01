@@ -16,6 +16,20 @@ public class TestMiniProva {
 		} catch (ProcessamentoException e) {
 			e.imprimeMsg();
 		}
+		
+		//////////////////////////////////////////////////////////////////////////////
+		
+		ProcessamentoArray  outroProcessamento = new ProcessamentoArray("Borba, Mariana C.");
+		Processamento processamentoNomes = new ProcessamentoNomes("");
+		outroProcessamento.inserirObjetoProcessamento(processamentoNomes);
+		String outraEntrada = "Borba, Mariana C.";
+		try {
+			String outraSaida = outroProcessamento.processar(outraEntrada);
+			System.out.println("\n\nEntrada = "+ outraEntrada + "\nsaida = " + outraSaida);
+		} catch (ProcessamentoException e) {
+			e.imprimeMsg();
+		}		
+		
 	}
 
 }
