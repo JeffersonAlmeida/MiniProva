@@ -1,13 +1,14 @@
-package excecoes;
+package miniProva;
 
 import java.util.Iterator;
 
-import miniProva.Processamento;
+import excecoes.ProcessamentoException;
 
-public class ProcessamentoNomes extends Processamento{
 
-	public ProcessamentoNomes(String p) {
-		super(p);
+public class ProcessamentoNomes implements Processamento{
+
+	public ProcessamentoNomes() {
+		super();
 	}
 	
 	// "Borba, Mariana C."  -> "Mariana C. Borba"

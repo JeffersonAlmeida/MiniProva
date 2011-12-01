@@ -1,6 +1,6 @@
-package excecoes;
+package miniProva;
 
-import miniProva.Processamento;
+import excecoes.ProcessamentoException;
 
 public class TestMiniProva {
 
@@ -8,10 +8,10 @@ public class TestMiniProva {
 	public static void main(String[] args) {
 		
 		String entrada = "Borba, Mariana C.";
-		Processamento processamento = new ProcessamentoNomes(entrada);
+		Processamento processamento = new ProcessamentoNomes();
 		String saida = "";
 		try {
-			saida = processamento.processar(processamento.getPalavra());
+			saida = processamento.processar(entrada);
 			System.out.println("\n\nEntrada = "+ entrada + "\nsaida = " + saida);
 		} catch (ProcessamentoException e) {
 			e.imprimeMsg();
@@ -20,7 +20,7 @@ public class TestMiniProva {
 		//////////////////////////////////////////////////////////////////////////////
 		
 		ProcessamentoArray  outroProcessamento = new ProcessamentoArray("Borba, Mariana C.");
-		Processamento processamentoNomes = new ProcessamentoNomes("");
+		Processamento processamentoNomes = new ProcessamentoNomes();
 		outroProcessamento.inserirObjetoProcessamento(processamentoNomes);
 		String outraEntrada = "Borba, Mariana C.";
 		try {
