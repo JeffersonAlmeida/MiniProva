@@ -1,5 +1,7 @@
 package miniProva;
 
+import excecoes.ProcessamentoException;
+
 public abstract class Processamento {
 	
 	private String palavra;
@@ -15,7 +17,7 @@ public abstract class Processamento {
 		this.palavra = palavra;
 	}
 	
-	public abstract void processar(String palavra);
+	public abstract String processar(String palavra)throws ProcessamentoException;
 	
 	public static void main(String[] args) {
 

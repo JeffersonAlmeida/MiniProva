@@ -15,8 +15,8 @@ public class ProcessamentoInverter extends Processamento {
 
 
 	@Override
-	public void processar(String palavra) {
-		
+	public String processar(String palavra) {
+		return "";
 	}
 
 }

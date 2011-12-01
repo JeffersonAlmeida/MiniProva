@@ -10,8 +10,8 @@ public class ProcessamentoMaiuscula extends Processamento {
 	}
 
 	@Override
-	public void processar(String palavra) {
-		
+	public String processar(String palavra) {
+		return "";
 	}
 	
 	public static void main(String[] args) {

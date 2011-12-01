@@ -24,4 +24,8 @@ public  class ProcessamentoException extends Exception {
 		this.palavraProcessada = palavraProcessada;
 	}
 	
+	public void imprimeMsg(){
+		System.out.println("Formato de nomes incorreto! palavra : " + this.palavraProcessada + " Formato valido: Borba, Mariana C.");
+	}
+	
 }
